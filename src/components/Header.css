@@ -1,0 +1,14 @@
+/* Ensure parent container height matches one role's height */
+.overflow-hidden {
+  height: 3rem; /* Matches the height of one role */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.transition-transform {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Role container must match the parent container height */
