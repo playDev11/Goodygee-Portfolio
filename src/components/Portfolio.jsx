@@ -9,7 +9,7 @@ const PortfolioSection = () => {
   const portfolioItems = [
     {
       id: 1,
-      src: image1, // Corrected: Use the imported variable directly
+      src: image1,
       alt: 'Central Image',
       span: 'row-span-2 col-span-2',
     },
@@ -41,13 +41,13 @@ const PortfolioSection = () => {
 
   return (
     <section className="py-16 bg-gray-100 text-center">
-      <h2 className="text-2xl font-medium tracking-wide  text-[#A4A4A4]">
+      <h2 className="text-2xl font-medium tracking-wide text-[#A4A4A4]">
         My Portfolio
       </h2>
-      <h3 className="text-6xl text-black mt-2">My Masterpiece</h3>
+      <h3 className="text-4xl md:text-6xl text-black mt-2">My Masterpiece</h3>
 
       {/* Filter buttons */}
-      <div className="flex justify-center gap-4 mt-6">
+      <div className="flex flex-wrap justify-center gap-4 mt-6">
         {['All', 'Graphic Design', 'UI/UX Design', 'Motion Graphics'].map(
           (category) => (
             <button
@@ -61,7 +61,8 @@ const PortfolioSection = () => {
       </div>
 
       {/* Portfolio grid */}
-      <div className="mt-10 grid grid-cols-4 gap-6 px-80 auto-rows-[minmax(10\50px,_1fr)]">
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-4 md:px-80 auto-rows-[minmax(150px,_1fr)]">
+        {/* Image 2 */}
         <div className="col-span-1">
           <img
             src={portfolioItems[1].src}
@@ -69,13 +70,17 @@ const PortfolioSection = () => {
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
-        <div className="col-span-2 row-span-2">
+
+        {/* Central Image */}
+        <div className="lg:col-span-2 lg:row-span-2">
           <img
             src={portfolioItems[0].src}
             alt={portfolioItems[0].alt}
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
+
+        {/* Image 3 */}
         <div className="col-span-1">
           <img
             src={portfolioItems[2].src}
@@ -83,6 +88,8 @@ const PortfolioSection = () => {
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
+
+        {/* Image 4 */}
         <div className="col-span-1">
           <img
             src={portfolioItems[3].src}
@@ -90,6 +97,8 @@ const PortfolioSection = () => {
             className="w-full h-full object-cover rounded-lg"
           />
         </div>
+
+        {/* Image 5 */}
         <div className="col-span-1">
           <img
             src={portfolioItems[4].src}
