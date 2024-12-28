@@ -20,20 +20,20 @@ const Header = () => {
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="container mx-auto flex flex-col justify-center h-full relative z-10">
-        <h1 className="text-5xl md:text-8xl font-bold text-white">
+        <h1 className="text-5xl md:text-8xl font-bold text-white ml-6">
           Hi, I’m Goodness
         </h1>
-        <h2 className="text-3xl md:text-7xl font-bold text-orange-400 mt-4">
+        <h2 className="text-3xl md:text-7xl font-bold text-orange-400 mt-4 ml-6">
           <span className="text-white">a</span>{' '}
           <span className="transition duration-500 ease-in-out">
             {roles[currentRole]}
           </span>
         </h2>
 
-        <p className="text-white text-xl mt-9 italic">
+        <p className="text-white text-xl mt-9 ml-6 italic">
           Your Next Favorite Designer
         </p>
-        <button className="mt-20 bg-transparent text-white border border-solid border-white px-2 w-36 py-2 rounded-md">
+        <button className="mt-20 bg-transparent text-white border border-solid border-white px-2 w-36 py-2 rounded-md ml-6">
           Get in touch
         </button>
       </div>

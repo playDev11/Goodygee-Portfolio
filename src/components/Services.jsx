@@ -11,7 +11,7 @@ const Services = () => {
           <p className="text-2xl text-[#A4A4A4] font-medium tracking-wider">
             My services
           </p>
-          <h1 className="text-black font-bold  text-6xl tracking-wider mb-10">
+          <h1 className="sm:text-6xl text-black font-bold  text-4xl tracking-wider mb-10">
             {' '}
             What I Am Great At
           </h1>
